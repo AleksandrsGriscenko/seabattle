@@ -9,6 +9,7 @@
 <html>
 <head>
     <title>Wait - sea Battle!</title>
+    <meta http-equiv="refresh" content="5">
 </head>
 <body>
 Please wait...
