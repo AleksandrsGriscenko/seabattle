@@ -10,19 +10,23 @@
 <head>
     <link rel="stylesheet" href="main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <style>
     body {
     background-image: url("http://cdn02.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_dsiware_8/SI_DSiWare_SeaBattle.jpg");
     background-size: cover;
     }
 
+
     div.absolute {
         position: absolute;
         top: 50%;
-        left: 65%;
-        width: 200px;
+        left: 60%;
+        width: 300px;
         height: 100px;
         border: 0px;
+        color: darkred;
+
     }
 
     </style>
@@ -34,10 +38,16 @@
 
 
 <form action="register" method="post">
-    <div class="absolute">Enter your name:
+    <h1>
+    <div class="absolute" >Enter your name:
+
     <input type="text" name="player-name">
+        <p></p>
     <input class="btn" type="submit" name="register" value="Start!">
     </div>
+
+
+    </h1>
 </form>
 
 </body>

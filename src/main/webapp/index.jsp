@@ -20,7 +20,7 @@
         .container .btn {
             position: absolute;
             top: 50%;
-            left: 65%;
+            left: 60%;
             transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
             background-color: #808080;
@@ -33,7 +33,7 @@
             text-align: center;
         }
 
-        .button span {
+        .btn span {
             cursor: pointer;
             display: inline-block;
             position: relative;
