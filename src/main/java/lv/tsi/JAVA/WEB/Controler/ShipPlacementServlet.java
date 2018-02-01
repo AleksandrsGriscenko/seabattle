@@ -1,6 +1,4 @@
-package lv.tsi;
-
-import lv.tsi.model.player;
+package lv.tsi.JAVA.WEB.Controler;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -9,20 +7,18 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "RegisterServlet", urlPatterns = "/register")
-public class RegisterServlet extends HttpServlet {
+@WebServlet(name = "ShipPlacementServlet", urlPatterns = "/shipPlacement")
+public class ShipPlacementServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String name = request.getParameter("player-name");   ///uznajom kakoe imja u usera
-        player player = new player();
-        player.setName(name);
+        String[] addresses = request.getParameterValues("addr");
 
-        response.sendRedirect("WaitEnemyRegister");
-
-
+        for (String a: addresses) {
+            System.out.println(a);
+        }
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        request.getRequestDispatcher("/WEB-INF/register.jsp").include(request, response);  //na servere ottabotal register.jsp
+        request.getRequestDispatcher("/WEB-INF/shipPlacement.jsp").include(request, response);
     }
 }

@@ -35,7 +35,8 @@
 </head>
 <body>
 <h1>
-<div class="absolute" >Waiting for opponent... </div>
+<div class="absolute" > ${playerGameContext.player.name} Waiting for opponent... </div>
 </h1>
+
 </body>
 </html>

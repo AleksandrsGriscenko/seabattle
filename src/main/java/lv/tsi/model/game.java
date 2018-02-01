@@ -4,6 +4,11 @@ public class game {
     private player player1;
     private player player2;
 
+
+    public boolean isComplete(){
+        return player1 != null && player2 != null;
+    }
+
     public player getPlayer1() {
         return player1;
     }
@@ -19,4 +24,5 @@ public class game {
     public void setPlayer2(player plaer2) {
         this.player2 = plaer2;
     }
+
 }
